@@ -10,12 +10,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
 </head>
 <body>
+    <div class="floating-3d-objects">
+        <!-- Planets -->
+        <div class="floating-object planet-3d planet-green">
+            <div class="planet-surface"></div>
+            <div class="planet-atmosphere"></div>
+        </div>
+        <div class="floating-object planet-3d planet-orange">
+            <div class="planet-surface"></div>
+            <div class="planet-atmosphere"></div>
+            <div class="planet-ring"></div>
+        </div>
+        
+        <!-- Space Station -->
+        <div class="floating-object space-station-3d">
+            <div class="station-base"></div>
+            <div class="station-module left"></div>
+            <div class="station-module right"></div>
+            <div class="station-antenna"></div>
+        </div>
+        
+        <!-- Asteroid Belt -->
+        <div class="floating-object asteroid-belt-3d">
+            <div class="asteroid a1"></div>
+            <div class="asteroid a2"></div>
+            <div class="asteroid a3"></div>
+            <div class="asteroid a4"></div>
+        </div>
+        
+        <!-- Black Hole -->
+        <div class="floating-object black-hole-3d">
+            <div class="event-horizon"></div>
+            <div class="accretion-disk"></div>
+        </div>
+    </div>
+
+
     <!-- Stars Background -->
     <div id="stars-container"></div>
     
     <!-- Floating Particles -->
     <div class="particles-container"></div>
-    
+    <!-- Floating astronaut background elements -->
+    <div class="background-astronauts">
+       
+        <div class="floating-bg-astronaut astronaut-2">
+            <img src="astronaut.png" alt="Floating Astronaut">
+        </div>
+        
+    </div>
     <!-- Spacecraft Cursor -->
     <div id="spacecraft-cursor">
         <i class="fas fa-rocket"></i>
@@ -52,36 +95,130 @@
     </nav>
     
     <!-- Hero Section -->
-    <section id="hero" class="section active-section">
-        <div class="nebula-bg nebula-1"></div>
-        <div class="nebula-bg nebula-2"></div>
-        <div class="hero-content">
+<section id="hero" class="section active-section">
+    <div class="nebula-bg nebula-1"></div>
+    <div class="nebula-bg nebula-2"></div>
+    
+ <!-- Realistic Cartoon Rocket Animation -->
+<div class="realistic-rocket-container">
+    <div class="realistic-rocket">
+        <!-- Rocket Nose Cone -->
+        <div class="rocket-nose-cone"></div>
+        
+        <!-- Rocket Main Body -->
+        <div class="rocket-main-body">
+            <!-- Stripes and details -->
+            <div class="rocket-stripes">
+                <div class="stripe stripe-1"></div>
+                <div class="stripe stripe-2"></div>
+            </div>
+            
+            <!-- Logo/Emblem -->
+            <div class="rocket-emblem">CK</div>
+        </div>
+        
+        <!-- Rocket Windows -->
+        <div class="rocket-windows">
+            <div class="porthole porthole-1"></div>
+            <div class="porthole porthole-2"></div>
+        </div>
+        
+        <!-- Rocket Fins -->
+        <div class="rocket-fins">
+            <div class="main-fin fin-left"></div>
+            <div class="main-fin fin-right"></div>
+            <div class="small-fin small-fin-left"></div>
+            <div class="small-fin small-fin-right"></div>
+        </div>
+        
+        <!-- Rocket Engine Section -->
+        <div class="rocket-engine">
+            <div class="engine-housing"></div>
+            <div class="engine-nozzle"></div>
+        </div>
+        
+        <!-- Rocket Fire Effects -->
+        <div class="rocket-fire">
+            <div class="fire-primary"></div>
+            <div class="fire-secondary"></div>
+            <div class="fire-glow"></div>
+        </div>
+        
+        <!-- Smoke Trail -->
+        <div class="smoke-trail"></div>
+    </div>
+</div>
+
+ <!-- Realistic Cartoon Rocket Animation -->
+ <div class="realistic-rocket-container2">
+    <div class="realistic-rocket">
+        <!-- Rocket Nose Cone -->
+        <div class="rocket-nose-cone"></div>
+        
+        <!-- Rocket Main Body -->
+        <div class="rocket-main-body">
+            <!-- Stripes and details -->
+            <div class="rocket-stripes">
+                <div class="stripe stripe-1"></div>
+                <div class="stripe stripe-2"></div>
+            </div>
+            
+            <!-- Logo/Emblem -->
+            <div class="rocket-emblem">CK</div>
+        </div>
+        
+        <!-- Rocket Windows -->
+        <div class="rocket-windows">
+            <div class="porthole porthole-1"></div>
+            <div class="porthole porthole-2"></div>
+        </div>
+        
+        <!-- Rocket Fins -->
+        <div class="rocket-fins">
+            <div class="main-fin fin-left"></div>
+            <div class="main-fin fin-right"></div>
+            <div class="small-fin small-fin-left"></div>
+            <div class="small-fin small-fin-right"></div>
+        </div>
+        
+        <!-- Rocket Engine Section -->
+        <div class="rocket-engine">
+            <div class="engine-housing"></div>
+            <div class="engine-nozzle"></div>
+        </div>
+        
+        <!-- Rocket Fire Effects -->
+        <div class="rocket-fire">
+            <div class="fire-primary"></div>
+            <div class="fire-secondary"></div>
+            <div class="fire-glow"></div>
+        </div>
+        
+        <!-- Smoke Trail -->
+        <div class="smoke-trail"></div>
+    </div>
+</div>
+    
+    <div class="hero-content">
+        <div class="hero-text-container">
             <div class="hero-text glitch-wrapper">
                 <h1 class="glitch" data-text="CUSHERAH KUGANANTHAN">CUSHERAH KUGANANTHAN</h1>
                 <div class="hero-subtitle">
                     <span class="typing-text"></span><span class="cursor">|</span>
                 </div>
-                <p>Aspiring Full Stack Developer with an Honours degree in Information Systems from UCSC</p>
-                <div class="hero-buttons">
+                <p>Full Stack Developer with an Honours degree in Information Systems from UCSC, exploring the vast universe of web technologies. Currently orbiting exciting project opportunities where I can deploy my constellation of frontend and backend skills. Ready to launch innovative solutions and navigate through complex coding challenges.</p>                <div class="hero-buttons">
                     <a href="#projects" class="button primary-button">Explore Projects</a>
                     <a href="#contact" class="button secondary-button">Contact Me</a>
                 </div>
             </div>
-            <div class="floating-astronaut">
-                <img src="/api/placeholder/400/400" alt="Floating Astronaut">
+        </div>
+        <div class="hero-astronaut-container">
+            <div class="main-astronaut">
+                <img src="astronaut.png" alt="Cusherah Kugananthan">
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <div class="scroll-arrows">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
     
     <!-- About Section -->
     <section id="about" class="section">
@@ -98,15 +235,43 @@
                         <div class="planet"></div>
                     </div>
                     <div class="about-image">
-                        <img src="/api/placeholder/300/300" alt="Cusherah Kugananthan">
+                        <img src="me.png" alt="Cusherah Kugananthan">
                         <div class="image-border"></div>
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Mission Statement</h3>
-                    <p>Aspiring Full Stack Developer with an Honours degree in Information Systems from UCSC, seeking a Software Engineering Intern role to apply and expand my skills.</p>
-                    <p>With experience in both frontend and backend technologies, I bring a holistic approach to every project, ensuring both visual appeal and technical robustness meet the highest standards.</p>
-                    <div class="about-stats">
+                    <h3>MISSION STATEMENT</h3>
+    
+                    
+                    <p>I navigate the full spectrum of development—from crafting stellar frontend interfaces to engineering robust backend systems. Like a well-balanced solar system, my projects harmonize visual brilliance with technical precision, ensuring optimal user experience across the digital universe.</p>
+                    
+                   
+                    
+                    <!-- Personal traits -->
+                    <div class="personal-traits">
+                        <h4>DEVELOPER COORDINATES</h4>
+                        <div class="traits-container">
+                            <div class="trait">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Problem Solver</span>
+                            </div>
+                            <div class="trait">
+                                <i class="fas fa-rocket"></i>
+                                <span>Quick Learner</span>
+                            </div>
+                            <div class="trait">
+                                <i class="fas fa-users"></i>
+                                <span>Team Player</span>
+                            </div>
+                            <div class="trait">
+                                <i class="fas fa-clock"></i>
+                                <span>Detail Oriented</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                     <div class="about-stats">
                         <div class="stat-item">
                             <div class="stat-number counter" data-target="4">0</div>
                             <div class="stat-label">Projects</div>
@@ -743,7 +908,7 @@
             initializeSkillBars();
             initializeProjects();
             initialize3DObjects();
-            
+            initializeRealisticRocket();
             // Show initial section
             document.body.classList.add('loaded');
         });
@@ -911,9 +1076,9 @@
             const cursor = document.querySelector('.cursor');
             const phrases = [
                 'Full Stack Developer',
-                'Angular Specialist',
-                'Flutter Developer',
-                'Problem Solver',
+                'UI/UX Designer',
+                'Project Manager',
+                'ML Enthusiast',
                 'UCSC Student'
             ];
             
@@ -959,41 +1124,257 @@
             }, 500);
         }
         
-        // Counter animation for about section
         function initializeCounters() {
-            const counters = document.querySelectorAll('.counter');
-            const speed = 200; // Counter speed
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const counter = entry.target;
-                        const target = parseInt(counter.getAttribute('data-target'));
-                        let count = 0;
-                        
-                        const updateCount = () => {
-                            const increment = target / speed;
-                            
-                            if (count < target) {
-                                count += increment;
-                                counter.textContent = Math.ceil(count);
-                                setTimeout(updateCount, 20);
-                            } else {
-                                counter.textContent = target;
-                            }
-                        };
-                        
-                        updateCount();
-                        observer.unobserve(counter);
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // Counter speed
+    
+    // Get the actual counts from the page
+    const projectsCount = document.querySelectorAll('.project-card').length;
+    const certificationsCount = 5; // Certifications count
+    const activitiesCount = 9; // Extracurricular activities count
+    
+    // Update the data-target attributes dynamically
+    counters.forEach(counter => {
+        if (counter.parentElement.querySelector('.stat-label').textContent === 'Projects') {
+            counter.setAttribute('data-target', projectsCount);
+        } else if (counter.parentElement.querySelector('.stat-label').textContent === 'Certifications') {
+            counter.setAttribute('data-target', certificationsCount);
+        } else if (counter.parentElement.querySelector('.stat-label').textContent === 'Extracurricular Activities') {
+            counter.setAttribute('data-target', activitiesCount);
+        }
+    });
+    
+    // Function to start counter animation when element is in view
+    const startCounterWhenVisible = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                let count = 0;
+                
+                // Faster counter animation (2 seconds max)
+                const updateCount = () => {
+                    const increment = target / 40; // 40 steps for 2 second animation
+                    
+                    if (count < target) {
+                        count += increment;
+                        counter.textContent = Math.ceil(count);
+                        setTimeout(updateCount, 50); // 50ms * 40 = 2000ms (2 seconds)
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                
+                updateCount();
+                observer.unobserve(counter);
+            }
+        });
+    };
+    
+    // Set up Intersection Observer
+    const counterObserver = new IntersectionObserver(startCounterWhenVisible, {
+        root: null,
+        threshold: 0.1
+    });
+    
+    // Observe all counters
+    counters.forEach(counter => {
+        counterObserver.observe(counter);
+    });
+}
+
+// ===== CERTIFICATIONS FUNCTIONALITY =====
+function initializeCertifications() {
+    // Add certification category button to skills section
+    const skillsCategories = document.querySelector('.skills-categories');
+    
+    if (!document.querySelector('[data-category="certifications"]')) {
+        const certButton = document.createElement('button');
+        certButton.className = 'skill-category';
+        certButton.setAttribute('data-category', 'certifications');
+        certButton.textContent = 'Certifications';
+        skillsCategories.appendChild(certButton);
+        
+        // Create certifications container
+        const skillsContent = document.querySelector('.skills-content');
+        const certsContainer = document.createElement('div');
+        certsContainer.className = 'skills-container hidden';
+        certsContainer.id = 'certifications-skills';
+        
+        // Add certifications
+        const certifications = [
+            {
+                title: 'Object Oriented Programming in Java Specialization',
+                provider: 'Coursera',
+                icon: 'fa-brands fa-java'
+            },
+            {
+                title: 'Meta Front-End Developer Professional Certificate',
+                provider: 'Coursera',
+                icon: 'fa-brands fa-react'
+            },
+            {
+                title: 'Java Programming and Software Engineering Fundamentals',
+                provider: 'Coursera',
+                icon: 'fa-solid fa-code'
+            },
+            {
+                title: 'Full Stack Web Development',
+                provider: 'Udemy',
+                icon: 'fa-solid fa-laptop-code'
+            },
+            {
+                title: 'React JS Development',
+                provider: 'Udemy',
+                icon: 'fa-brands fa-react'
+            }
+        ];
+        
+        certifications.forEach(cert => {
+            const certItem = document.createElement('div');
+            certItem.className = 'certification-item';
+            certItem.innerHTML = `
+                <div class="certification-icon">
+                    <i class="${cert.icon}"></i>
+                </div>
+                <h3>${cert.title}</h3>
+                <p>${cert.provider}</p>
+            `;
+            certsContainer.appendChild(certItem);
+        });
+        
+        skillsContent.appendChild(certsContainer);
+        
+        // Update category click handler
+        const allCategories = document.querySelectorAll('.skill-category');
+        allCategories.forEach(category => {
+            category.addEventListener('click', () => {
+                const targetCategory = category.getAttribute('data-category');
+                
+                // Update active category
+                allCategories.forEach(c => c.classList.remove('active'));
+                category.classList.add('active');
+                
+                // Show corresponding skills
+                const allContainers = document.querySelectorAll('.skills-container');
+                allContainers.forEach(container => {
+                    container.classList.add('hidden');
+                    if (container.id === `${targetCategory}-skills` || 
+                        (targetCategory === 'certifications' && container.id === 'certifications-skills')) {
+                        container.classList.remove('hidden');
                     }
                 });
             });
-            
-            counters.forEach(counter => {
-                observer.observe(counter);
-            });
-        }
+        });
+    }
+}
+
+// ===== EXTRACURRICULAR ACTIVITIES FUNCTIONALITY =====
+function initializeExtraActivities() {
+    const aboutSection = document.getElementById('about');
+    const aboutText = aboutSection.querySelector('.about-text');
+    
+    // Only add if not already present
+    if (!document.querySelector('.extra-activities-toggle')) {
+        // Create toggle button
+        const toggleButton = document.createElement('div');
+        toggleButton.className = 'extra-activities-toggle';
+        toggleButton.innerHTML = `View Extracurricular Activities <i class="fas fa-chevron-down"></i>`;
+        aboutText.appendChild(toggleButton);
         
+        // Create activities container
+        const activitiesContainer = document.createElement('div');
+        activitiesContainer.className = 'extra-activities-container';
+        
+        // Add heading
+        const activitiesHeading = document.createElement('h4');
+        activitiesHeading.textContent = 'EXTRACURRICULAR & VOLUNTEER ACTIVITIES';
+        activitiesHeading.style.color = 'var(--primary-light)';
+        activitiesHeading.style.marginBottom = '1rem';
+        activitiesContainer.appendChild(activitiesHeading);
+        
+        // Add activities list
+        const activitiesList = document.createElement('div');
+        activitiesList.className = 'extra-activities-list';
+        
+        const activities = [
+            'Top 30 Teams, Freshhack 3.0 Hackathon, ISACA of UCSC 2022',
+            'Top 10 Teams, Pyhack 2.0, IEEE Student Branch of IIT 2023',
+            'Participant, SLIIT Designathon 2022',
+            'Design Team Member, IEEE Student Branch, UCSC 2022-2023',
+            'Outgoing Global Talent (oGT) Member, AIESEC, University of Colombo 2022-2023',
+            'Member, Rotaract Club of UCSC 2022-2023',
+            'Member, Gavel Club, University of Colombo 2022-present',
+            'Design Team Member, Astronomical Society, University of Colombo 2022-present',
+            'Design Team Member, Pahasara Media 2022-present'
+        ];
+        
+        activities.forEach((activity, index) => {
+            const activityItem = document.createElement('div');
+            activityItem.className = 'activity-item';
+            
+            // Split the activity string for better formatting
+            const parts = activity.split(', ');
+            
+            activityItem.innerHTML = `
+                <h4>${parts[0]}</h4>
+                <p>${parts.slice(1).join(', ')}</p>
+            `;
+            
+            activitiesList.appendChild(activityItem);
+        });
+        
+        activitiesContainer.appendChild(activitiesList);
+        aboutText.appendChild(activitiesContainer);
+        
+        // Toggle functionality
+        toggleButton.addEventListener('click', () => {
+            activitiesContainer.classList.toggle('active');
+            toggleButton.classList.toggle('active');
+            if (toggleButton.classList.contains('active')) {
+                toggleButton.innerHTML = `Hide Extracurricular Activities <i class="fas fa-chevron-up"></i>`;
+            } else {
+                toggleButton.innerHTML = `View Extracurricular Activities <i class="fas fa-chevron-down"></i>`;
+            }
+        });
+        
+        // Add popup notification for activities
+        const popup = document.createElement('div');
+        popup.className = 'activities-popup';
+        popup.innerHTML = `
+            <i class="fas fa-info-circle"></i>
+            Scroll down to view my extracurricular activities!
+            <span class="activities-popup-close"><i class="fas fa-times"></i></span>
+        `;
+        document.body.appendChild(popup);
+        
+        // Show popup after a delay when about section is visible
+        const aboutSectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !sessionStorage.getItem('popupShown')) {
+                    setTimeout(() => {
+                        popup.classList.add('show');
+                        sessionStorage.setItem('popupShown', 'true');
+                        
+                        // Auto-hide popup after 5 seconds
+                        setTimeout(() => {
+                            popup.classList.remove('show');
+                        }, 5000);
+                    }, 1500);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+        
+        aboutSectionObserver.observe(aboutSection);
+        
+        // Close popup on click
+        popup.querySelector('.activities-popup-close').addEventListener('click', () => {
+            popup.classList.remove('show');
+        });
+    }
+}
         // Skill bars animation
         function initializeSkillBars() {
             const skillBars = document.querySelectorAll('.skill-bar');
@@ -1081,6 +1462,324 @@
                 });
             });
         }
-    </script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation and smooth scrolling
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+
+            // Smooth scrolling and active section highlighting
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    // Update active nav link
+                    navLinks.forEach(nl => nl.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Smooth scroll to section
+                    targetSection.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+
+            // Typing effect
+            function initializeTypingEffect() {
+                const typingText = document.querySelector('.typing-text');
+                const cursor = document.querySelector('.cursor');
+                const phrases = [
+                'Full Stack Developer',
+                'UI/UX Designer',
+                'Project Manager',
+                'Problem Solver',
+                'UCSC Student'
+                ];
+                
+                let phraseIndex = 0;
+                let letterIndex = 0;
+                let currentPhrase = '';
+                let isDeleting = false;
+                let typeSpeed = 100;
+                
+                function type() {
+                    const currentPhraseText = phrases[phraseIndex];
+                    
+                    if (isDeleting) {
+                        currentPhrase = currentPhraseText.substring(0, letterIndex - 1);
+                        letterIndex--;
+                        typeSpeed = 50;
+                    } else {
+                        currentPhrase = currentPhraseText.substring(0, letterIndex + 1);
+                        letterIndex++;
+                        typeSpeed = 150;
+                    }
+                    
+                    typingText.textContent = currentPhrase;
+                    
+                    if (!isDeleting && letterIndex === currentPhraseText.length) {
+                        isDeleting = true;
+                        typeSpeed = 2000; // Pause at the end
+                    } else if (isDeleting && letterIndex === 0) {
+                        isDeleting = false;
+                        phraseIndex = (phraseIndex + 1) % phrases.length;
+                        typeSpeed = 500; // Pause before next phrase
+                    }
+                    
+                    setTimeout(type, typeSpeed);
+                }
+                
+                // Start typing effect
+                setTimeout(type, 1000);
+                
+                // Blinking cursor
+                setInterval(() => {
+                    cursor.classList.toggle('blink');
+                }, 500);
+            }
+
+            // Initialize components
+            initializeTypingEffect();
+
+            // Intersection Observer for section animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active-section');
+                        
+                        // Update active nav link
+                        const id = entry.target.id;
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    } else {
+                        entry.target.classList.remove('active-section');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections
+            sections.forEach(section => {
+                sectionObserver.observe(section);
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+
+// Function to initialize realistic cartoon rocket animation with S-path
+function initializeRealisticRocket() {
+    const rocketContainer = document.querySelector('.realistic-rocket-container');
+    const rocket = document.querySelector('.realistic-rocket');
+    
+    if (!rocketContainer || !rocket) return;
+    
+    // Function to create fire particles
+    function createFireParticles() {
+        // Only create particles while rocket is in view and animation is active
+        if (!rocket || 
+            !rocket.getAnimations().some(animation => 
+                animation.animationName === 'rocket-s-path' && 
+                !animation.finished)) {
+            return;
+        }
+        
+        // Get rocket position
+        const rocketRect = rocket.getBoundingClientRect();
+        const rocketX = rocketRect.left + rocketRect.width / 2;
+        const rocketY = rocketRect.bottom - 30; // Position near engine
+        
+        // Calculate fire direction based on rocket rotation
+        const computedStyle = window.getComputedStyle(rocket);
+        const transformMatrix = new DOMMatrix(computedStyle.transform);
+        const angle = Math.atan2(transformMatrix.b, transformMatrix.a);
+        
+        // Create more intense fire particles
+        const fireParticle = document.createElement('div');
+        fireParticle.classList.add('fire-particle');
+        
+        // Slightly larger fire particles for more dramatic effect
+        const fireSize = Math.random() * 15 + 8;
+        fireParticle.style.width = `${fireSize}px`;
+        fireParticle.style.height = `${fireSize}px`;
+        
+        // Calculate direction offset based on rocket angle
+        const fireOffsetX = Math.sin(angle) * 50; // Increased offset for longer trail
+        const fireOffsetY = -Math.cos(angle) * 50;
+        
+        // Position behind rocket based on angle
+        fireParticle.style.left = `${rocketX + fireOffsetX}px`;
+        fireParticle.style.top = `${rocketY + fireOffsetY}px`;
+        
+        // Small random movement
+        const fireRandomX = (Math.random() - 0.5) * 20;
+        const fireRandomY = (Math.random() - 0.5) * 20;
+        
+        // Add to page
+        document.body.appendChild(fireParticle);
+        
+        // Animate movement in the opposite direction of rocket travel
+        fireParticle.animate([
+            { transform: 'translate(0, 0)' },
+            { transform: `translate(${-fireOffsetX * 0.4 + fireRandomX}px, ${-fireOffsetY * 0.4 + fireRandomY}px)` }
+        ], {
+            duration: 800,
+            easing: 'ease-out',
+            fill: 'forwards'
+        });
+        
+        // Add fading animation
+        fireParticle.animate([
+            { opacity: 0.9, transform: 'scale(1)' },
+            { opacity: 0, transform: 'scale(0)' }
+        ], {
+            duration: 800,
+            easing: 'ease-out',
+            fill: 'forwards'
+        });
+        
+        // Remove particle after animation
+        setTimeout(() => {
+            if (fireParticle && fireParticle.parentNode) {
+                fireParticle.parentNode.removeChild(fireParticle);
+            }
+        }, 800);
+    }
+    
+    // Function to create smoke particles
+    function createSmokeParticles() {
+        // Only create particles while rocket is in view and animation is active
+        if (!rocket || 
+            !rocket.getAnimations().some(animation => 
+                animation.animationName === 'rocket-s-path' && 
+                !animation.finished)) {
+            return;
+        }
+        
+        // Get rocket position
+        const rocketRect = rocket.getBoundingClientRect();
+        const rocketX = rocketRect.left + rocketRect.width / 2;
+        const rocketY = rocketRect.bottom - 20; // Position near engine
+        
+        // Calculate direction based on rocket rotation
+        const computedStyle = window.getComputedStyle(rocket);
+        const transformMatrix = new DOMMatrix(computedStyle.transform);
+        const angle = Math.atan2(transformMatrix.b, transformMatrix.a);
+        
+        // Create smoke particle
+        const smokeParticle = document.createElement('div');
+        smokeParticle.classList.add('smoke-particle');
+        
+        // Randomize particle size (smoke particles are larger)
+        const smokeSize = Math.random() * 25 + 15; // Slightly larger for more visibility
+        smokeParticle.style.width = `${smokeSize}px`;
+        smokeParticle.style.height = `${smokeSize}px`;
+        
+        // Calculate direction offset based on rocket angle
+        const smokeOffsetX = Math.sin(angle) * 60; // Increased offset
+        const smokeOffsetY = -Math.cos(angle) * 60;
+        
+        // Position behind rocket based on angle
+        smokeParticle.style.left = `${rocketX + smokeOffsetX}px`;
+        smokeParticle.style.top = `${rocketY + smokeOffsetY}px`;
+        
+        // Small random movement
+        const smokeRandomX = (Math.random() - 0.5) * 40;
+        const smokeRandomY = (Math.random() - 0.5) * 40;
+        
+        // Add to page
+        document.body.appendChild(smokeParticle);
+        
+        // Animate movement in the opposite direction of rocket travel
+        smokeParticle.animate([
+            { transform: 'translate(0, 0)' },
+            { transform: `translate(${-smokeOffsetX * 0.5 + smokeRandomX}px, ${-smokeOffsetY * 0.5 + smokeRandomY}px)` }
+        ], {
+            duration: 1500,
+            easing: 'ease-out',
+            fill: 'forwards'
+        });
+        
+        // Add fading and expanding animation
+        smokeParticle.animate([
+            { opacity: 0.6, transform: 'scale(1)' },
+            { opacity: 0, transform: 'scale(2.0)' }
+        ], {
+            duration: 1500,
+            easing: 'ease-out',
+            fill: 'forwards'
+        });
+        
+        // Remove particle after animation
+        setTimeout(() => {
+            if (smokeParticle && smokeParticle.parentNode) {
+                smokeParticle.parentNode.removeChild(smokeParticle);
+            }
+        }, 1500);
+    }
+    
+    // Create particles at intervals - more frequent for faster animation
+    const fireInterval = setInterval(createFireParticles, 30);  // More frequent fire particles
+    const smokeInterval = setInterval(createSmokeParticles, 80); // Less frequent smoke
+    
+    // Stop creating particles after animation ends - shorter duration for faster animation
+    setTimeout(() => {
+        clearInterval(fireInterval);
+        clearInterval(smokeInterval);
+    }, 7000); // Animation duration (6s) + buffer
+    
+    // Add engine sound effect (optional - requires user interaction first)
+    let rocketSound = null;
+    
+    document.addEventListener('click', () => {
+        // Create sound only once after user interaction
+        if (!rocketSound) {
+            rocketSound = new Audio();
+            rocketSound.src = 'data:audio/mp3;base64,SUQzAwAAAAAAJlRQRTEAAAAcAAAAU291bmRKYXkuY29tIFNvdW5kIEVmZmVjdHMA//uQxAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAADAAAGhgBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr///////////////////////////////////////////8AAAA8TEFNRTMuMTAwBLkAAAAAAAAAABUgJAMGQQABmgAABoYi7iVhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//uQxAADwAABpAAAACAAADSAAAAETEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV';
+            rocketSound.volume = 0.4; // Slightly louder for faster rocket
+            rocketSound.playbackRate = 1.2; // Speed up sound for faster rocket
+            rocketSound.loop = true;
+            
+            // Start sound
+            rocketSound.play().catch(e => console.log('Sound auto-play prevented'));
+            
+            // Stop sound after animation ends
+            setTimeout(() => {
+                if (rocketSound) {
+                    rocketSound.pause();
+                    rocketSound = null;
+                }
+            }, 7000);
+        }
+    }, { once: true });
+    
+    // Reset animation on page refresh
+    window.addEventListener('beforeunload', () => {
+        rocket.style.animation = 'none';
+        setTimeout(() => {
+            rocket.style.animation = 'rocket-s-path 6s 1s forwards ease-in-out';
+        }, 50);
+    });
+}
+
+
+   </script>
 </body>
 </html>
