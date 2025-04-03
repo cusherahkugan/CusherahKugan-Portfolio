@@ -495,11 +495,11 @@ nav {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    border: 2px solid var(--primary-color);
+    border: 6px solid var(--primary-color);
     border-radius: 150px;
     z-index: -1;
     animation: border-pulse 3s infinite alternate ease-in-out;
-    box-shadow: #0099ff;
+    box-shadow: #fbfdfd;
 }
 
 @keyframes border-pulse {
