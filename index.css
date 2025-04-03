@@ -3080,3 +3080,385 @@ body.loaded .realistic-rocket {
 .activities-popup-close:hover {
     color: var(--text-light);
 }
+
+/* Updated About Section Styles with Left-Aligned Image */
+
+/* Equal margins for the entire section */
+.section-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    z-index: 1;
+}
+
+/* Reworked flex container layout for about section */
+.about-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Adjust image size and position it higher */
+.about-image-container {
+    flex: 0 0 40%;
+    order: 1; /* Image first (left) */
+    margin-top: -40px; /* Move image up */
+    position: relative;
+}
+
+.about-image {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+/* Text section to the right */
+.about-text {
+    flex: 0 0 60%;
+    order: 2; /* Text second (right) */
+    padding-left: 1rem;
+}
+
+/* Enhanced stats counters - appear faster */
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    font-weight: 500;
+}
+
+/* Time-related styling for all sections */
+.activity-time-badge {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.6rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    transform: translateY(-10px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced carousel container with equal margins */
+.about-carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 2.5rem 0;
+    overflow: hidden;
+    border-radius: 15px;
+    background: rgba(13, 13, 43, 0.6);
+    padding: 1.8rem;
+    box-shadow: 0 8px 32px rgba(2, 4, 105, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced scroll arrow styling */
+.scroll-arrow-indicator {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, var(--primary-dark), var(--secondary-color));
+    padding: 0.6rem 1.3rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    opacity: 0;
+    z-index: 5;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.scroll-arrow-indicator.visible {
+    opacity: 0.9;
+}
+
+.scroll-arrow-indicator:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 5px 20px rgba(65, 88, 208, 0.5);
+}
+
+.scroll-arrow-indicator i {
+    animation: arrow-pulse 1.5s ease-in-out infinite;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+@keyframes arrow-pulse {
+    0%, 100% { transform: translateX(0); opacity: 0.8; }
+    50% { transform: translateX(5px); opacity: 1; }
+}
+
+/* Enhanced cards for activities */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.activity-item {
+    background: rgba(10, 10, 40, 0.5);
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.activity-item:hover {
+    background: rgba(20, 20, 80, 0.5);
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.activity-item h5 {
+    color: var(--primary-light);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.activity-item p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+}
+
+/* Enhanced timeline styles */
+.mini-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+    padding: 0 1rem 0 2rem;
+}
+
+.mini-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    border-radius: 3px;
+}
+
+.mini-timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.mini-timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.mini-timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 10px rgba(65, 88, 208, 0.5);
+    z-index: 1;
+}
+
+.mini-timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+    animation: timeline-pulse 2s infinite;
+}
+
+@keyframes timeline-pulse {
+    0%, 100% { transform: scale(0.8); opacity: 0.8; }
+    50% { transform: scale(1.2); opacity: 1; }
+}
+
+.mini-timeline-content {
+    background-color: rgba(20, 20, 43, 0.7);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mini-timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-color);
+    background-color: rgba(25, 25, 60, 0.7);
+}
+
+.mini-timeline-date {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Speed up counter animations */
+@keyframes count-up {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.counter {
+    animation: count-up 0.5s ease forwards;
+    opacity: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .about-flex-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .about-image-container {
+        order: 1;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .about-text {
+        order: 2;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .mini-timeline {
+        padding-left: 2rem;
+    }
+    
+    .activities-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding: 0 1.5rem;
+    }
+    
+    .about-carousel-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .carousel-indicator {
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .carousel-indicator span {
+        font-size: 0.8rem;
+    }
+    
+    .scroll-arrow-indicator {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-image {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .mini-timeline-content h5 {
+        font-size: 1rem;
+    }
+    
+    .mini-timeline-content h6 {
+        font-size: 0.85rem;
+    }
+    
+    .scroll-arrow-indicator {
+        bottom: 15px;
+        top: auto;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .scroll-arrow-indicator.visible {
+        transform: translateX(50%);
+    }
+    
+    .scroll-arrow-indicator:hover {
+        transform: translateX(50%) scale(1.05);
+    }
+    
+    @keyframes arrow-pulse {
+        0%, 100% { transform: translateX(0); opacity: 0.8; }
+        50% { transform: translateX(5px); opacity: 1; }
+    }
+    
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+}

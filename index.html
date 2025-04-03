@@ -220,15 +220,18 @@
     </div>
 </section>
     
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="nebula-bg nebula-3"></div>
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">ABOUT ME</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="about-content">
+ <!-- About Section with Left-Aligned Image -->
+<section id="about" class="section">
+    <div class="nebula-bg nebula-3"></div>
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="about-content">
+            <!-- Rearranged flex container with image on left -->
+            <div class="about-flex-container">
+                <!-- Image container moved to left -->
                 <div class="about-image-container">
                     <div class="planet-orbit">
                         <div class="orbit-path"></div>
@@ -239,16 +242,56 @@
                         <div class="image-border"></div>
                     </div>
                 </div>
+                
+                <!-- Text moved to right -->
                 <div class="about-text">
                     <h3>MISSION STATEMENT</h3>
-    
-                    
                     <p>I navigate the full spectrum of development—from crafting stellar frontend interfaces to engineering robust backend systems. Like a well-balanced solar system, my projects harmonize visual brilliance with technical precision, ensuring optimal user experience across the digital universe.</p>
                     
-                   
-                    
-                    <!-- Personal traits -->
-                    <div class="personal-traits">
+                    <!-- Stats counters -->
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="4">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="5">0</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="9">0</div>
+                            <div class="stat-label">Extracurricular Activities</div>
+                        </div>
+                    </div>
+                    <a href="#" class="button primary-button">Download Resume <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            
+            <!-- Horizontal Carousel -->
+            <div class="about-carousel-container">
+                <!-- Carousel Navigation -->
+                <div class="carousel-nav">
+                    <div class="carousel-indicator active" data-slide="0">
+                        <span>Developer Coordinates</span>
+                    </div>
+                    <div class="carousel-indicator" data-slide="1">
+                        <span>Extracurricular Activities</span>
+                    </div>
+                    <div class="carousel-indicator" data-slide="2">
+                        <span>Education Highlights</span>
+                    </div>
+                </div>
+                
+                <!-- Animated Scroll Arrow with enhanced styling -->
+                <div class="scroll-arrow-indicator">
+                    <span>Scroll to see activities</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                
+                <!-- Carousel Slides Container -->
+                <div class="carousel-track">
+                    <!-- Slide 1: Developer Coordinates -->
+                    <div class="carousel-slide" id="dev-coordinates">
                         <h4>DEVELOPER COORDINATES</h4>
                         <div class="traits-container">
                             <div class="trait">
@@ -270,27 +313,100 @@
                         </div>
                     </div>
                     
-                
-                     <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number counter" data-target="4">0</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number counter" data-target="5">0</div>
-                            <div class="stat-label">Certifications</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number counter" data-target="9">0</div>
-                            <div class="stat-label">Extracurricular Activities</div>
+                    <!-- Slide 2: Extracurricular Activities with enhanced time indicators -->
+                    <div class="carousel-slide" id="extra-activities">
+                        <h4>EXTRACURRICULAR & VOLUNTEER ACTIVITIES</h4>
+                        <div class="activities-grid">
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2022</div>
+                                <h5>Top 30 Teams</h5>
+                                <p>Freshhack 3.0 Hackathon, ISACA of UCSC</p>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2023</div>
+                                <h5>Top 10 Teams</h5>
+                                <p>Pyhack 2.0, IEEE Student Branch of IIT</p>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2022</div>
+                                <h5>Participant</h5>
+                                <p>SLIIT Designathon</p>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2022-2023</div>
+                                <h5>Design Team Member</h5>
+                                <p>IEEE Student Branch, UCSC</p>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2022-2023</div>
+                                <h5>oGT Member</h5>
+                                <p>AIESEC, University of Colombo</p>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2022-2023</div>
+                                <h5>Member</h5>
+                                <p>Rotaract Club of UCSC</p>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2022-present</div>
+                                <h5>Member</h5>
+                                <p>Gavel Club, University of Colombo</p>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2022-present</div>
+                                <h5>Design Team Member</h5>
+                                <p>Astronomical Society, University of Colombo</p>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-time-badge">2022-present</div>
+                                <h5>Design Team Member</h5>
+                                <p>Pahasara Media</p>
+                            </div>
                         </div>
                     </div>
-                    <a href="#" class="button primary-button">Download Resume <i class="fas fa-download"></i></a>
+                    
+                    <!-- Slide 3: Education Highlights with enhanced time indicators -->
+                    <div class="carousel-slide" id="education-slide">
+                        <h4>EDUCATION HIGHLIGHTS</h4>
+                        
+                        <div class="mini-timeline">
+                            <div class="mini-timeline-item">
+                                <div class="mini-timeline-content">
+                                    <div class="mini-timeline-date">2022 - 2026</div>
+                                    <h5>B.Sc. (Hons) in Information Systems</h5>
+                                    <h6>University of Colombo School of Computing</h6>
+                                    <p>Currently pursuing a degree with focus on full-stack development. CGPA: 3.57/4.0</p>
+                                    <div class="timeline-achievements">
+                                        <span>Dean's List: 2nd Year 1st Semester</span>
+                                        <span>Dean's List: 3rd Year 1st Semester</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mini-timeline-item">
+                                <div class="mini-timeline-content">
+                                    <div class="mini-timeline-date">2023</div>
+                                    <h5>Meta Front-End Developer Professional Certificate</h5>
+                                    <h6>Coursera</h6>
+                                    <p>Industry-recognized certification covering HTML, CSS, JavaScript, React, and modern frontend development practices.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mini-timeline-item">
+                                <div class="mini-timeline-content">
+                                    <div class="mini-timeline-date">2023</div>
+                                    <h5>Object Oriented Programming in Java Specialization</h5>
+                                    <h6>Coursera</h6>
+                                    <p>Comprehensive program covering Java programming fundamentals, OOP principles, and application development.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </div>
+</section>
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="nebula-bg nebula-4"></div>
@@ -910,6 +1026,8 @@
             initializeProjects();
             initialize3DObjects();
             initializeRealisticRocket();
+            initializeAboutCarousel();
+
             // Show initial section
             document.body.classList.add('loaded');
         });
@@ -1125,65 +1243,7 @@
             }, 500);
         }
         
-        function initializeCounters() {
-    const counters = document.querySelectorAll('.counter');
-    const speed = 200; // Counter speed
-    
-    // Get the actual counts from the page
-    const projectsCount = document.querySelectorAll('.project-card').length;
-    const certificationsCount = 5; // Certifications count
-    const activitiesCount = 9; // Extracurricular activities count
-    
-    // Update the data-target attributes dynamically
-    counters.forEach(counter => {
-        if (counter.parentElement.querySelector('.stat-label').textContent === 'Projects') {
-            counter.setAttribute('data-target', projectsCount);
-        } else if (counter.parentElement.querySelector('.stat-label').textContent === 'Certifications') {
-            counter.setAttribute('data-target', certificationsCount);
-        } else if (counter.parentElement.querySelector('.stat-label').textContent === 'Extracurricular Activities') {
-            counter.setAttribute('data-target', activitiesCount);
-        }
-    });
-    
-    // Function to start counter animation when element is in view
-    const startCounterWhenVisible = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const target = parseInt(counter.getAttribute('data-target'));
-                let count = 0;
-                
-                // Faster counter animation (2 seconds max)
-                const updateCount = () => {
-                    const increment = target / 40; // 40 steps for 2 second animation
-                    
-                    if (count < target) {
-                        count += increment;
-                        counter.textContent = Math.ceil(count);
-                        setTimeout(updateCount, 50); // 50ms * 40 = 2000ms (2 seconds)
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                
-                updateCount();
-                observer.unobserve(counter);
-            }
-        });
-    };
-    
-    // Set up Intersection Observer
-    const counterObserver = new IntersectionObserver(startCounterWhenVisible, {
-        root: null,
-        threshold: 0.1
-    });
-    
-    // Observe all counters
-    counters.forEach(counter => {
-        counterObserver.observe(counter);
-    });
-}
-
+      
 // ===== CERTIFICATIONS FUNCTIONALITY =====
 function initializeCertifications() {
     // Add certification category button to skills section
@@ -1280,8 +1340,6 @@ function initializeExtraActivities() {
         // Create toggle button
         const toggleButton = document.createElement('div');
         toggleButton.className = 'extra-activities-toggle';
-        toggleButton.innerHTML = `View Extracurricular Activities <i class="fas fa-chevron-down"></i>`;
-        aboutText.appendChild(toggleButton);
         
         // Create activities container
         const activitiesContainer = document.createElement('div');
@@ -1780,7 +1838,360 @@ function initializeRealisticRocket() {
     });
 }
 
+// Faster counter animation function
+function initializeCounters() {
+    const counters = document.querySelectorAll('.counter');
+    
+    // Get the actual counts from the page
+    const projectsCount = document.querySelectorAll('.project-card').length;
+    const certificationsCount = 5; // Certifications count
+    const activitiesCount = 9; // Extracurricular activities count
+    
+    // Update the data-target attributes dynamically
+    counters.forEach(counter => {
+        if (counter.parentElement.querySelector('.stat-label').textContent === 'Projects') {
+            counter.setAttribute('data-target', projectsCount);
+        } else if (counter.parentElement.querySelector('.stat-label').textContent === 'Certifications') {
+            counter.setAttribute('data-target', certificationsCount);
+        } else if (counter.parentElement.querySelector('.stat-label').textContent === 'Extracurricular Activities') {
+            counter.setAttribute('data-target', activitiesCount);
+        }
+    });
+    
+    // Function to start counter animation when element is in view
+    const startCounterWhenVisible = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                let count = 0;
+                
+                // Much faster counter animation (0.5 seconds max)
+                const updateCount = () => {
+                    const increment = target / 10; // 10 steps for 0.5 second animation
+                    
+                    if (count < target) {
+                        count += increment;
+                        counter.textContent = Math.ceil(count);
+                        setTimeout(updateCount, 50); // 50ms * 10 = 500ms (0.5 seconds)
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                
+                updateCount();
+                observer.unobserve(counter);
+            }
+        });
+    };
+    
+    // Set up Intersection Observer
+    const counterObserver = new IntersectionObserver(startCounterWhenVisible, {
+        root: null,
+        threshold: 0.1
+    });
+    
+    // Observe all counters
+    counters.forEach(counter => {
+        counterObserver.observe(counter);
+    });
+}
 
+// Enhanced carousel functionality with arrow updates
+function initializeAboutCarousel() {
+    const carouselTrack = document.querySelector('.carousel-track');
+    const carouselSlides = document.querySelectorAll('.carousel-slide');
+    const carouselIndicators = document.querySelectorAll('.carousel-indicator');
+    const scrollArrow = document.querySelector('.scroll-arrow-indicator');
+    
+    // Set initial state
+    let currentSlide = 0;
+    let totalSlides = carouselSlides.length;
+    updateCarouselState();
+    
+    // Show scroll arrow indicator after initial load
+    setTimeout(() => {
+        scrollArrow.classList.add('visible');
+    }, 1000);
+    
+    // Indicator click handling
+    carouselIndicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentSlide = index;
+            updateCarouselState();
+            scrollToSlide(index);
+        });
+    });
+    
+    // Touch and scroll handling for the carousel
+    let isScrolling = false;
+    let startX;
+    let scrollLeft;
+    
+    carouselTrack.addEventListener('scroll', () => {
+        if (!isScrolling) {
+            const slideWidth = carouselTrack.clientWidth;
+            const scrollPosition = carouselTrack.scrollLeft;
+            const slideIndex = Math.round(scrollPosition / slideWidth);
+            
+            if (currentSlide !== slideIndex && slideIndex >= 0 && slideIndex < carouselSlides.length) {
+                currentSlide = slideIndex;
+                updateCarouselState();
+            }
+        }
+    });
+    
+    carouselTrack.addEventListener('mousedown', (e) => {
+        isScrolling = true;
+        startX = e.pageX - carouselTrack.offsetLeft;
+        scrollLeft = carouselTrack.scrollLeft;
+    });
+    
+    carouselTrack.addEventListener('touchstart', (e) => {
+        isScrolling = true;
+        startX = e.touches[0].pageX - carouselTrack.offsetLeft;
+        scrollLeft = carouselTrack.scrollLeft;
+    });
+    
+    carouselTrack.addEventListener('mouseleave', () => {
+        isScrolling = false;
+    });
+    
+    carouselTrack.addEventListener('mouseup', () => {
+        isScrolling = false;
+        snapToSlide();
+    });
+    
+    carouselTrack.addEventListener('touchend', () => {
+        isScrolling = false;
+        snapToSlide();
+    });
+    
+    carouselTrack.addEventListener('mousemove', (e) => {
+        if (!isScrolling) return;
+        e.preventDefault();
+        const x = e.pageX - carouselTrack.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll speed multiplier
+        carouselTrack.scrollLeft = scrollLeft - walk;
+    });
+    
+    carouselTrack.addEventListener('touchmove', (e) => {
+        if (!isScrolling) return;
+        const x = e.touches[0].pageX - carouselTrack.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll speed multiplier
+        carouselTrack.scrollLeft = scrollLeft - walk;
+    });
+    
+    // Scroll arrow click handler
+    scrollArrow.addEventListener('click', () => {
+        const nextSlide = (currentSlide + 1) % totalSlides;
+        currentSlide = nextSlide;
+        updateCarouselState();
+        scrollToSlide(nextSlide);
+    });
+    
+    // Update visual state of the carousel
+    function updateCarouselState() {
+        // Update indicators
+        carouselIndicators.forEach((indicator, index) => {
+            if (index === currentSlide) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
+        
+        // Update scroll arrow text and icon based on current slide
+        updateScrollArrow();
+        
+        // Add a focused class to the current slide
+        carouselSlides.forEach((slide, index) => {
+            if (index === currentSlide) {
+                slide.classList.add('active-slide');
+            } else {
+                slide.classList.remove('active-slide');
+            }
+        });
+    }
+    
+    // Update scroll arrow text and direction based on current slide
+    function updateScrollArrow() {
+        const arrowIcon = scrollArrow.querySelector('i');
+        const arrowText = scrollArrow.querySelector('span');
+        
+        if (currentSlide === 0) {
+            arrowText.textContent = 'Scroll to see activities';
+            arrowIcon.className = 'fas fa-arrow-right';
+        } else if (currentSlide === 1) {
+            arrowText.textContent = 'Scroll to see education';
+            arrowIcon.className = 'fas fa-arrow-right';
+        } else if (currentSlide === totalSlides - 1) {
+            arrowText.textContent = 'Back to coordinates';
+            arrowIcon.className = 'fas fa-arrow-left';
+        }
+    }
+    
+    // Scroll to specific slide
+    function scrollToSlide(index) {
+        const slideWidth = carouselTrack.clientWidth;
+        carouselTrack.scrollTo({
+            left: index * slideWidth,
+            behavior: 'smooth'
+        });
+    }
+    
+    // Snap to nearest slide after scrolling
+    function snapToSlide() {
+        const slideWidth = carouselTrack.clientWidth;
+        const scrollPosition = carouselTrack.scrollLeft;
+        const slideIndex = Math.round(scrollPosition / slideWidth);
+        
+        scrollToSlide(slideIndex);
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        // Only handle keys when carousel is in viewport
+        const rect = carouselTrack.getBoundingClientRect();
+        const isVisible = (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+        
+        if (!isVisible) return;
+        
+        if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
+            currentSlide++;
+            updateCarouselState();
+            scrollToSlide(currentSlide);
+        } else if (e.key === 'ArrowLeft' && currentSlide > 0) {
+            currentSlide--;
+            updateCarouselState();
+            scrollToSlide(currentSlide);
+        }
+    });
+    
+    // Set up auto-show/hide for the scroll arrow when carousel is in view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                scrollArrow.classList.add('visible');
+                
+                // Add a subtle entrance animation
+                scrollArrow.style.animation = 'fadeInRight 0.5s ease forwards';
+            } else {
+                scrollArrow.classList.remove('visible');
+                scrollArrow.style.animation = '';
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    observer.observe(document.querySelector('.about-carousel-container'));
+    
+    // Add touch hint for mobile users
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+        const touchHint = document.createElement('div');
+        touchHint.className = 'touch-hint';
+        touchHint.innerHTML = '<i class="fas fa-hand-pointer"></i> Swipe to navigate';
+        touchHint.style.position = 'absolute';
+        touchHint.style.bottom = '20px';
+        touchHint.style.left = '50%';
+        touchHint.style.transform = 'translateX(-50%)';
+        touchHint.style.background = 'rgba(65, 88, 208, 0.8)';
+        touchHint.style.color = 'white';
+        touchHint.style.padding = '8px 16px';
+        touchHint.style.borderRadius = '20px';
+        touchHint.style.fontSize = '0.9rem';
+        touchHint.style.opacity = '0';
+        touchHint.style.transition = 'opacity 0.5s ease';
+        
+        document.querySelector('.about-carousel-container').appendChild(touchHint);
+        
+        // Show hint briefly then fade out
+        setTimeout(() => {
+            touchHint.style.opacity = '1';
+            setTimeout(() => {
+                touchHint.style.opacity = '0';
+                setTimeout(() => {
+                    touchHint.remove();
+                }, 500);
+            }, 3000);
+        }, 2000);
+    }
+}
+
+// Initialize our customized functions when the document is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Initialize existing functions
+    initializeSpacecraftCursor();
+    initializeStars();
+    initializeParticles();
+    initializeNavigation();
+    initializeTypingEffect();
+    initializeCounters(); // Our enhanced counter function
+    initializeSkillBars();
+    initializeProjects();
+    initialize3DObjects();
+    initializeRealisticRocket();
+    
+    // Initialize our enhanced carousel
+    initializeAboutCarousel();
+    
+    // Show initial section
+    document.body.classList.add('loaded');
+    
+    // Add animation to time-related elements
+    const timeElements = document.querySelectorAll('.mini-timeline-date, .activity-time-badge');
+    timeElements.forEach((element, index) => {
+        element.style.animationDelay = `${index * 0.1}s`;
+        element.classList.add('time-animate');
+    });
+});
+
+// Add these CSS animations to make time elements pop
+const styleElement = document.createElement('style');
+styleElement.textContent = `
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(30px) translateY(-50%);
+        }
+        to {
+            opacity: 0.9;
+            transform: translateX(0) translateY(-50%);
+        }
+    }
+    
+    @keyframes timeElementPop {
+        0% { transform: scale(0.8); opacity: 0; }
+        70% { transform: scale(1.1); }
+        100% { transform: scale(1); opacity: 1; }
+    }
+    
+    .time-animate {
+        animation: timeElementPop 0.5s forwards ease-out;
+        opacity: 0;
+    }
+    
+    @media (max-width: 576px) {
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px) translateY(0);
+            }
+            to {
+                opacity: 0.9;
+                transform: translateX(0) translateY(0);
+            }
+        }
+    }
+`;
+document.head.appendChild(styleElement);
    </script>
 </body>
 </html>
